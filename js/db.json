@@ -6,6 +6,116 @@
 	},
 	"words": [
 		{
+			"word": "parangón",
+			"meaning": "1. m. Comparación o semejanza.",
+			"color": "",
+			"meta": {
+				"slug": "parangon",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-13"
+			}
+		},
+		{
+			"word": "entelequia",
+			"meaning": "2. f. irón. Cosa irreal.",
+			"color": "",
+			"meta": {
+				"slug": "entelequia",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-13"
+			}
+		},
+		{
+			"word": "abracadabrante",
+			"meaning": "1. adj. Muy sorprendente y desconcertante.",
+			"color": "",
+			"meta": {
+				"slug": "abracadabrante",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-13"
+			}
+		},
+		{
+			"word": "lúnula",
+			"meaning": "1. f. Espacio blanquecino semilunar de la raíz de las uñas.",
+			"color": "",
+			"meta": {
+				"slug": "lunula",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-11"
+			}
+		},
+		{
+			"word": "fútil",
+			"meaning": "1. adj. De poco aprecio o importancia.",
+			"color": "",
+			"meta": {
+				"slug": "futil",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-09"
+			}
+		},
+		{
+			"word": "onírico, ca",
+			"meaning": "1. adj. Perteneciente o relativo a los sueños.",
+			"color": "",
+			"meta": {
+				"slug": "onirico",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-09"
+			}
+		},
+		{
+			"word": "desfalco",
+			"meaning": "1. m. Acción y efecto de desfalcar (|| derribar a alguien del favor, privanza o amistad que gozaba).",
+			"color": "",
+			"meta": {
+				"slug": "desfalco",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-09"
+			}
+		},
+		{
+			"word": "celosía",
+			"meaning": "1. f. Enrejado de listoncillos de madera o de hierro, que se pone en las ventanas de los edificios y otros huecos análogos, para que las personas que están en el interior vean sin ser vistas.",
+			"color": "",
+			"meta": {
+				"slug": "celosia",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-03"
+			}
+		},
+		{
+			"word": "albricias",
+			"meaning": "1. interj. U. para denotar júbilo.",
+			"color": "",
+			"meta": {
+				"slug": "albricias",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-02"
+			}
+		},
+		{
+			"word": "prístino, na",
+			"meaning": "1. adj. Antiguo, primero, primitivo, original.",
+			"color": "",
+			"meta": {
+				"slug": "pristino",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
 			"word": "presteza",
 			"meaning": "1. f. Prontitud, diligencia y brevedad en hacer o decir algo.",
 			"color": "",
@@ -51,11 +161,10 @@
 		},
 		{
 			"word": "miedo cerval",
-			"slug": "miedo-cerval",
 			"meaning": "1. m. El grande o excesivo.",
 			"color": "dark",
 			"meta": {
-				"slug": "",
+				"slug": "miedo-cerval",
 				"source": "DRAE",
 				"version": 22,
 				"date": "2015-06-01"
