@@ -6,7 +6,7 @@
 	},
 	"words": [
 		{
-			"word": "presteza.",
+			"word": "presteza",
 			"meaning": "1. f. Prontitud, diligencia y brevedad en hacer o decir algo.",
 			"color": "",
 			"meta": {
@@ -17,7 +17,7 @@
 			}
 		},
 		{
-			"word": "céfiro.",
+			"word": "céfiro",
 			"meaning": "2. m. poét. Viento suave y apacible.",
 			"color": "blue",
 			"meta": {
@@ -28,7 +28,7 @@
 			}
 		},
 		{
-			"word": "bucólico, ca.",
+			"word": "bucólico, ca",
 			"meaning": "1. adj. Dicho de un género de poesía o de una composición poética, por lo común dialogada: Que trata de cosas concernientes a los pastores o a la vida campestre.",
 			"color": "",
 			"meta": {
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"word": "llar.",
+			"word": "llar",
 			"meaning": "1. f. Cadena de hierro, pendiente en el cañón de la chimenea, con un garabato en el extremo inferior para colgar la caldera, y a poca distancia otro para subirla o bajarla. U. m. en pl.",
 			"color": "",
 			"meta": {
@@ -50,7 +50,7 @@
 			}
 		},
 		{
-			"word": "miedo cerval.",
+			"word": "miedo cerval",
 			"slug": "miedo-cerval",
 			"meaning": "1. m. El grande o excesivo.",
 			"color": "dark",
@@ -62,11 +62,66 @@
 			}
 		},
 		{
+			"word": "abyecto, ta",
+			"meaning": "1. adj. Despreciable, vil en extremo.",
+			"color": "",
+			"meta": {
+				"slug": "abyecto",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
 			"word": "arrebolada",
 			"meaning": "1. f. Conjunto de nubes enrojecidas por los rayos del Sol.",
 			"color": "orange",
 			"meta": {
 				"slug": "arrebolada",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "virgulilla",
+			"meaning": "1. f. Signo ortográfico de forma de coma, rasguillo o trazo; p. ej., el apóstrofo, la cedilla, la tilde de la ñ, etc.",
+			"color": "",
+			"meta": {
+				"slug": "virgulilla",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "adlátere",
+			"meaning": "1. com. despect. Persona subordinada a otra, de la que parece inseparable.",
+			"color": "",
+			"meta": {
+				"slug": "adlatere",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "componenda",
+			"meaning": "1. f. Arreglo o transacción censurable o de carácter inmoral.",
+			"color": "",
+			"meta": {
+				"slug": "componenda",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "sempiterno, na",
+			"meaning": "1. adj. Que durará siempre; que, habiendo tenido principio, no tendrá fin.",
+			"color": "",
+			"meta": {
+				"slug": "sempiterno",
 				"source": "DRAE",
 				"version": 22,
 				"date": "2015-06-01"
