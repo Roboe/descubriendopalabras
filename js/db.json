@@ -1,0 +1,76 @@
+{
+	"language": "es",
+	"preferred_source": {
+		"name": "DRAE, Diccionario de la lengua española",
+		"url": "http://lema.rae.es/drae/"
+	},
+	"words": [
+		{
+			"word": "presteza.",
+			"meaning": "1. f. Prontitud, diligencia y brevedad en hacer o decir algo.",
+			"color": "",
+			"meta": {
+				"slug": "presteza",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "céfiro.",
+			"meaning": "2. m. poét. Viento suave y apacible.",
+			"color": "blue",
+			"meta": {
+				"slug": "cefiro",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "bucólico, ca.",
+			"meaning": "1. adj. Dicho de un género de poesía o de una composición poética, por lo común dialogada: Que trata de cosas concernientes a los pastores o a la vida campestre.",
+			"color": "",
+			"meta": {
+				"slug": "bucolico",
+				"source": "DRAE",
+				"version": 23,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "llar.",
+			"meaning": "1. f. Cadena de hierro, pendiente en el cañón de la chimenea, con un garabato en el extremo inferior para colgar la caldera, y a poca distancia otro para subirla o bajarla. U. m. en pl.",
+			"color": "",
+			"meta": {
+				"slug": "llar",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "miedo cerval.",
+			"slug": "miedo-cerval",
+			"meaning": "1. m. El grande o excesivo.",
+			"color": "dark",
+			"meta": {
+				"slug": "",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		},
+		{
+			"word": "arrebolada",
+			"meaning": "1. f. Conjunto de nubes enrojecidas por los rayos del Sol.",
+			"color": "orange",
+			"meta": {
+				"slug": "arrebolada",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-01"
+			}
+		}
+	]
+}
