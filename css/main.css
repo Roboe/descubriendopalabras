@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
 	background-color: #3498db;
+	transition: background-color ease .5s;
 }
 
 *,
