@@ -53,23 +53,37 @@
 
 	/* Functions */
 	function showWord(word) {
+		global.location.hash = word.meta.slug; // Trigger hashchange event, but its effect is ignored on the handler.
 		word_element.textContent = word.word + ".";
 		meaning_element.textContent = word.meaning;
 		html.className = (!!word.color && COLORS.indexOf(word.color)) ? word.color : arrayndomize(COLORS.filter(function (color) {
-			return color != html.className;
+			return color !== html.className;
 		}));
 	}
 
 	function onLoad() {
 		hashWord = getHashWord();
+		if (!choosenWord || hashWord !== choosenWord.meta.slug) {
+			getJSON(DB, function (json) {
+				if (json.words) {
+					if (hashWord) {
+						choosenWord = json.words.filter(function (word) {
+							return word.meta.slug === hashWord;
+						})[0];
+					}
+					choosenWord = choosenWord || arrayndomize(json.words);
+					showWord(choosenWord);
+				}
+			});
+		}
+	}
+
+	function generateNewWord() {
 		getJSON(DB, function (json) {
 			if (json.words) {
-				if (hashWord) {
-					choosenWord = json.words.filter(function(word) {
-						return word.meta.slug === hashWord;
-					})[0];
-				}
-				choosenWord = choosenWord || arrayndomize(json.words);
+				choosenWord = arrayndomize(json.words.filter(function (word) {
+					return word !== choosenWord;
+				}));
 				showWord(choosenWord);
 			}
 		});
@@ -77,4 +91,5 @@
 
 	global.addEventListener("DOMContentLoaded", onLoad, false);
 	global.addEventListener("hashchange", onLoad, false);
+	$("#button-generate").addEventListener("click", generateNewWord, false);
 }(this));

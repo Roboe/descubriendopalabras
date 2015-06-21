@@ -29,7 +29,6 @@ body {
 	color: #ffffff;
 	font-family: 'Liberation Sans', 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 1.5em;
 	font-weight: 400;
 	-webkit-text-size-adjust: 100%;
 	max-width: 40rem;
@@ -44,10 +43,64 @@ main {
 	padding-bottom: 20%;
 }
 
-.title,
-.content {
+#title {
 	text-align: justify;
 	padding: 1rem 2rem;
 	margin: 0;
-	word-wrap: break-word;
+	text-overflow: ellipsis;
+	overflow: auto;
+	word-break: break-all;
+	/* max-width: 300px; Working, but... */
+}
+
+article {
+	text-align: justify;
+	padding: 1rem 2rem;
+	margin: 0;
+	line-height: 1.5em;
+}
+
+aside {
+	text-align: center;
+	margin-top: 2em;
+}
+
+input[type="button"] {
+	cursor: pointer;
+
+	font-size: 1rem;
+	color: inherit;
+
+	margin: .25em;
+	padding: 0.5em 0.75em 0.5em 1.75em;
+	border: none;
+	border-radius: 0.25em;
+
+	background: #9BA3AE no-repeat .5em center;
+	background-size: 1.1em auto;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"]:hover {
+	background-color: #798392;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#button-share {
+	background-image: url("../assets/twemoji/72x72/1f517.png");
+}
+
+#button-generate {
+	background-image: url("../assets/twemoji/72x72/1f504.png");
+}
+
+/* Break-word hack (mobile first) */
+h1 > span {
+	display: block;
+}
+
+@media (min-width: 400px) {
+	h1 > span {
+		display: inline;
+	}
 }
