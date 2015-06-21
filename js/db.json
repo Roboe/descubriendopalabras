@@ -6,6 +6,94 @@
 	},
 	"words": [
 		{
+			"word": "dingolondango",
+			"meaning": "1. m1 coloq. Expresión cariñosa, mimo, halago, arrumaco. U. m. en pl.",
+			"color": "",
+			"meta": {
+				"slug": "dingolondango",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-07-17"
+			}
+		},
+		{
+			"word": "serendipia",
+			"meaning": "f. Descubrimiento o hallazgo afortunado e inesperado que se produce cuando se está buscando otra cosa distinta.",
+			"color": "",
+			"meta": {
+				"slug": "serendipia",
+				"source": "Wikipedia",
+				"version": "2015-07-13_es",
+				"date": "2015-07-13"
+			}
+		},
+		{
+			"word": "pusilánime",
+			"meaning": "1. adj. Dicho de una persona: Falta de ánimo y valor para tomar decisiones o afrontar situaciones comprometidas.",
+			"color": "",
+			"meta": {
+				"slug": "pusilanime",
+				"source": "DRAE",
+				"version": 23,
+				"date": "2015-07-13"
+			}
+		},
+		{
+			"word": "exegesis o exégesis",
+			"meaning": "1. f. Explicación, interpretación.",
+			"color": "",
+			"meta": {
+				"slug": "exegesis",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-22"
+			}
+		},
+		{
+			"word": "impronta",
+			"meaning": "2. f. Marca o huella que, en el orden moral, deja una cosa en otra.",
+			"color": "",
+			"meta": {
+				"slug": "impronta",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-21"
+			}
+		},
+		{
+			"word": "espurio, ria",
+			"meaning": "1. adj. bastardo (‖ que degenera de su origen o naturaleza).",
+			"color": "",
+			"meta": {
+				"slug": "espurio",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-21"
+			}
+		},
+		{
+			"word": "noctívago, ga",
+			"meaning": "1. adj. poét. Que anda vagando durante la noche. U. t. c. s.",
+			"color": "dark",
+			"meta": {
+				"slug": "noctivago",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-21"
+			}
+		},
+		{
+			"word": "feérico, ca",
+			"meaning": "1. adj. Perteneciente o relativo a las hadas.",
+			"color": "",
+			"meta": {
+				"slug": "feerico",
+				"source": "DRAE",
+				"version": 22,
+				"date": "2015-06-13"
+			}
+		},
+		{
 			"word": "parangón",
 			"meaning": "1. m. Comparación o semejanza.",
 			"color": "",
@@ -73,7 +161,7 @@
 		},
 		{
 			"word": "desfalco",
-			"meaning": "1. m. Acción y efecto de desfalcar (|| derribar a alguien del favor, privanza o amistad que gozaba).",
+			"meaning": "1. m. Acción y efecto de desfalcar (‖ derribar a alguien del favor, privanza o amistad que gozaba).",
 			"color": "",
 			"meta": {
 				"slug": "desfalco",
