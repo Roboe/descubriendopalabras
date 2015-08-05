@@ -48,12 +48,14 @@
 		html = $("html"),
 		word_element = $("#word"),
 		meaning_element = $("#meaning"),
+		title_element = $("#title"),
 		hashWord,
 		choosenWord;
 
 	/* Functions */
 	function showWord(word) {
 		global.location.hash = word.meta.slug; // Trigger hashchange event, but its effect is ignored on the handler.
+		global.document.title = title_element.textContent + ": " + word.word;
 		word_element.textContent = word.word + ".";
 		meaning_element.textContent = word.meaning;
 		html.className = (!!word.color && COLORS.indexOf(word.color)) ? word.color : arrayndomize(COLORS.filter(function (color) {
