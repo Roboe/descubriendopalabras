@@ -1,0 +1,15 @@
+{
+  "id": "arrebolada",
+  "dictionary_entry": {
+    "word": "arrebolada",
+    "meaning_order": 1,
+    "grammatical_category": "f.",
+    "definition": "Conjunto de nubes enrojecidas por los rayos del Sol."
+  },
+  "bg_color": "orange",
+  "meta": {
+    "source_name": "DRAE",
+    "source_version": 22,
+    "added_on": "2015-06-01"
+  }
+}

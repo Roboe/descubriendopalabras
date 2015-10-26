@@ -1,0 +1,16 @@
+{
+  "id": "cefiro",
+  "dictionary_entry": {
+    "word": "céfiro",
+    "meaning_order": 2,
+    "grammatical_category": "m.",
+    "mark": "poét.",
+    "definition": "Viento suave y apacible."
+  },
+  "bg_color": "blue",
+  "meta": {
+    "source_name": "DRAE",
+    "source_version": 22,
+    "added_on": "2015-06-01"
+  }
+}

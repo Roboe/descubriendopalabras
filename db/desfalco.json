@@ -1,0 +1,15 @@
+{
+  "id": "desfalco",
+  "dictionary_entry": {
+    "word": "desfalco",
+    "meaning_order": 1,
+    "grammatical_category": "m.",
+    "definition": "Acción y efecto de desfalcar.",
+    "referenced_definition": "derribar a alguien del favor, privanza o amistad que gozaba"
+  },
+  "meta": {
+    "source_name": "DRAE",
+    "source_version": 22,
+    "added_on": "2015-06-09"
+  }
+}

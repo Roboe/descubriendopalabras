@@ -1,0 +1,15 @@
+{
+  "id": "espurio",
+  "dictionary_entry": {
+    "word": "espurio, ria",
+    "meaning_order": 1,
+    "grammatical_category": "adj.",
+    "definition": "bastardo.",
+    "referenced_definition": "que degenera de su origen o naturaleza"
+  },
+  "meta": {
+    "source_name": "DRAE",
+    "source_version": 22,
+    "added_on": "2015-06-21"
+  }
+}

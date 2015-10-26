@@ -1,0 +1,14 @@
+{
+  "id": "presteza",
+  "dictionary_entry": {
+    "word": "presteza",
+    "meaning_order": 1,
+    "grammatical_category": "f.",
+    "definition": "Prontitud, diligencia y brevedad en hacer o decir algo."
+  },
+  "meta": {
+    "source_name": "DRAE",
+    "source_version": 22,
+    "added_on": "2015-06-01"
+  }
+}

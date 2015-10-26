@@ -1,0 +1,14 @@
+{
+  "id": "virgulilla",
+  "dictionary_entry": {
+    "word": "virgulilla",
+    "meaning_order": 1,
+    "grammatical_category": "f.",
+    "definition": "Signo ortográfico de forma de coma, rasguillo o trazo; p. ej., el apóstrofo, la cedilla, la tilde de la ñ, etc."
+  },
+  "meta": {
+    "source_name": "DRAE",
+    "source_version": 22,
+    "added_on": "2015-06-01"
+  }
+}
