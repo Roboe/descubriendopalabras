@@ -1,4 +1,5 @@
 {
   "preset": "airbnb",
-  "excludeFiles": ["bower_components/**", "node_modules/**"]
+  "excludeFiles": ["bower_components/**", "node_modules/**"],
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
 }
