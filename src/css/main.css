@@ -87,11 +87,11 @@ input[type="button"]:hover {
 }
 
 #button-share {
-	background-image: url("../assets/twemoji/72x72/1f517.png");
+	background-image: url("../assets/emojione/1F517.png");
 }
 
 #button-generate {
-	background-image: url("../assets/twemoji/72x72/1f504.png");
+	background-image: url("../assets/emojione/1F504.png");
 }
 
 /* Break-word hack (mobile first) */

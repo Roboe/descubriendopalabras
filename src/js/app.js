@@ -2,96 +2,97 @@
   'use strict';
 
   /* Utils */
-  function ajax(method, path, mimetype, send, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, path, true);
-    xhr.overrideMimeType(mimetype);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          callback(null, xhr.responseText);
-        } else {
-          callback(xhr.status);
-        }
-      }
-    };
-
-    xhr.send(send);
+  function fetchJSON(url) {
+    return fetch(url)
+      .then(function(response) {
+        return response.json();
+      });
   }
 
-  function getJSON(path, callback) {
-    ajax('GET', path, 'text/txt', null, function(error, response) {
-      if (!error) {
-        var db = JSON.parse(response);
-        callback(db);
-      } else {
-        console.error('Request: ' + error);
-      }
+  function delArrayItem(array, item) {
+    var arr = array.slice();
+    var index = arr.indexOf(item);
+    if (index >= 0) {
+      arr.splice(index, 1);
+    }
 
-    });
+    return arr;
   }
 
   function arrayndomize(array) {
     return array[Math.floor(Math.random() * array.length)];
   }
 
-  function getHashWord() {
-    return global.location.hash.substr(1); // Return empty string if not available
-  }
-
   /* Constants */
   var $ = document.querySelector.bind(document);
-  var log = console.log.bind(console);
+  /* var log = console.log.bind(console); */
   var COLORS = ['blue', 'orange', 'green', 'dark', 'purple']; // CSS <html> classnames
-  var DB = 'js/db.json';
+  var DB_INDEX = 'db.json';
+  var DB_PATH = 'db';
 
-  /* Variables */
+  var DB_INDEX_CACHED;
+
   var html = $('html');
   var wordElement = $('#word');
   var meaningElement = $('#meaning');
   var titleElement = $('#title');
+
+  /* Variables */
   var hashWord;
   var choosenWord;
 
   /* Functions */
+  function getHashWord() {
+    return global.location.hash.substr(1); // Returns empty string if not available
+  }
+
   function showWord(word) {
-    global.location.hash = word.meta.slug; // Trigger hashchange event, but its effect is ignored on the handler.
-    global.document.title = titleElement.textContent + ': ' + word.word;
-    wordElement.textContent = word.word + '.';
-    meaningElement.textContent = word.meaning;
-    html.className = (!!word.color && COLORS.indexOf(word.color)) ? word.color : arrayndomize(COLORS.filter(function(color) {
-      return color !== html.className;
-    }));
+    console.log('Word:', word);
+    fetchJSON(DB_PATH + '/' + word + '.json')
+      .then(function(json) {
+        console.log('JSON:', json);
+        global.location.hash = json.id; // Trigger hashchange event, but its effect is ignored on the handler.
+        global.document.title = titleElement.textContent + ': ' + json.dictionary_entry.word;
+
+        if (!!json.bg_color && COLORS.indexOf(json.bg_color)) {
+          html.className = json.bg_color;
+        } else {
+          var colors = delArrayItem(COLORS, html.className);
+          console.log('colors', colors);
+
+          html.className = arrayndomize(colors);
+        }
+
+        return json.dictionary_entry;
+      })
+      .then(function(entry) {
+        console.log('Entry:', entry);
+        wordElement.textContent = entry.word + '.';
+        meaningElement.textContent = entry.definition;
+      });
+
   }
 
   function onLoad() {
     hashWord = getHashWord();
-    if (!choosenWord || hashWord !== choosenWord.meta.slug) {
-      getJSON(DB, function(json) {
-        if (json.words) {
-          if (hashWord) {
-            choosenWord = json.words.filter(function(word) {
-              return word.meta.slug === hashWord;
-            })[0];
+    if (!choosenWord || hashWord !== choosenWord) {
+      fetchJSON(DB_INDEX)
+        .then(function(json) {
+          if (json.words) {
+            DB_INDEX_CACHED = json.words;
+            return choosenWord = (hashWord && json.words.indexOf(hashWord) >= 0)
+              ? hashWord
+              : arrayndomize(json.words);
           }
-
-          choosenWord = choosenWord || arrayndomize(json.words);
-          showWord(choosenWord);
-        }
-      });
+        })
+        .then(showWord);
     }
   }
 
-  function generateNewWord() {
-    getJSON(DB, function(json) {
-      if (json.words) {
-        choosenWord = arrayndomize(json.words.filter(function(word) {
-          return word !== choosenWord;
-        }));
-
-        showWord(choosenWord);
-      }
-    });
+  function generateNewWord() { // WIP
+    var words = delArrayItem(DB_INDEX_CACHED, choosenWord);
+    choosenWord = arrayndomize(words);
+    showWord(choosenWord);
   }
 
   global.addEventListener('DOMContentLoaded', onLoad, false);
