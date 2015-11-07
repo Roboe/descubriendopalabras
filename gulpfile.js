@@ -47,6 +47,12 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(DEST.scripts));
 });
 
+gulp.task('scripts-dev', function() {
+  return gulp.src(SRC.scripts)
+    .pipe(plugins.concat(DEST.scripts_concat_name))
+    .pipe(gulp.dest(DEST.scripts));
+});
+
 // Copy EmojiOne images
 gulp.task('emojione', function() {
   return gulp.src(SRC.emojione)
@@ -94,8 +100,8 @@ gulp.task('nojekyll', function() {
 gulp.task('default', ['pages', 'stylesheets', 'scripts', 'db_words', 'db_index', 'nojekyll']);
 
 // Watch for changes for easy development
-gulp.task('watch', ['default'], function() {
+gulp.task('watch', ['pages', 'stylesheets', 'scripts-dev', 'db_words', 'db_index'], function() {
   gulp.watch(SRC.pages, ['pages']);
   gulp.watch(SRC.stylesheets, ['stylesheets']);
-  gulp.watch(SRC.scripts, ['scripts']);
+  gulp.watch(SRC.scripts, ['scripts-dev']);
 });
