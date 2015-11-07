@@ -1,0 +1,10 @@
+# Auto-deploy to GH Pages thanks to this Gist:
+# https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
+language: node_js
+#node_js: version already specified on .nvmrc
+
+script: bash ./deploy.sh
+env:
+  global:
+    - GH_REF: github.com/Roboe/descubriendopalabras.git
+    - secure: kxbatE55w/glY3T+CQi7ihx5xHViDvLqF4GV7Sjl+05ZlXI9Ixe2gIsvnbeEgJWbwO4OQT5E3I4TgcSANYPCz5x7x6O/KsV8+mizrs14hFD+0lckvcVPdcJsWOl2fTmUGizjE9GkyT4TTnm3bSRXFGks3cCFY3Yxi9dnQT+eDPFt7Fju0HCTQrCGAEmrQfu+rJiMbsBLrAmgT38HutHnonmSyKQxi9yQon584rVyKMm1h8Z+LzpUUNWafMC9ctNXv5+BhJwNwT7H7+qQsX+fBmrunrctwA0HzqIcvgmaS2hVfUpTYvTE65E0pxU5K6mEQX950Sbq/ewJQoO+xlccyvyX4hHNTRbAEBGgb8sDPXFEpYx4uqFqlqWtvCdAr12rXy2y/FojDyAcNvaiJVVQ+s+UJT5lxP3QUUFZe4QJjZnVzAkepBMsFn2lGRNfagJ7KNpFE3+lx5A309jm4d5fGEyd7ePRChLh1KO5EGuawIb3hqPD4x3DEBiWDAt+vG7L0LH2nM+4nVwTsJYqlC5mwCD+xXaCeA0+kseofTYXZ2Ji89zEduTJaomYHDlNCPBm2DUbs+/dup9CT6kcVqNxS1qxDZW45NullDhw/HpvwbRwT7N6n6e8ORZg58mPqMHkM6EMIEExYZi9nXCFEBnbZ58Jm7EXXZr8A8rNG/ZUp8s=
