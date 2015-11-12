@@ -2,12 +2,13 @@
   "id": "serendipia",
   "dictionary_entry": {
     "word": "serendipia",
+    "meaning_order": 1,
     "grammatical_category": "f.",
-    "definition": "Descubrimiento o hallazgo afortunado e inesperado que se produce cuando se está buscando otra cosa distinta."
+    "definition": "Hallazgo valioso que se produce de manera accidental o casual."
   },
   "meta": {
-    "source_name": "Wikipedia",
-    "source_version": "2015-07-13_es",
+    "source_name": "DLE",
+    "source_version": "23",
     "added_on": "2015-07-13"
   }
 }

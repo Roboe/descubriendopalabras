@@ -2,13 +2,13 @@
   "id": "bucolico",
   "dictionary_entry": {
     "word": "bucólico, ca",
-    "meaning_order": 1,
+    "meaning_order": 2,
     "grammatical_category": "adj.",
     "definition": "Dicho de un género de poesía o de una composición poética, por lo común dialogada: Que trata de cosas concernientes a los pastores o a la vida campestre."
   },
   "bg_color": "green",
   "meta": {
-    "source_name": "DRAE",
+    "source_name": "DLE",
     "source_version": 23,
     "added_on": "2015-06-01"
   }

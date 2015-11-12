@@ -2,14 +2,14 @@
   "id": "adlatere",
   "dictionary_entry": {
     "word": "adlátere",
-    "meaning_order": 1,
-    "grammatical_category": "com.",
+    "meaning_order": 2,
+    "grammatical_category": "m. y f.",
     "mark": "despect.",
     "definition": "Persona subordinada a otra, de la que parece inseparable."
   },
   "meta": {
-    "source_name": "DRAE",
-    "source_version": 22,
+    "source_name": "DLE",
+    "source_version": 23,
     "added_on": "2015-06-01"
   }
 }

@@ -4,13 +4,13 @@
     "word": "dingolondango",
     "meaning_order": 1,
     "grammatical_category": "m.",
-    "mark": "coloq.",
+    "mark": ["coloq.", "p. us."],
     "definition": "Expresión cariñosa, mimo, halago, arrumaco.",
     "usage_notes": "U. m. en pl."
   },
   "meta": {
-    "source_name": "DRAE",
-    "source_version": 22,
+    "source_name": "DLE",
+    "source_version": 23,
     "added_on": "2015-07-17"
   }
 }
