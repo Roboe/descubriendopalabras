@@ -3,6 +3,10 @@
 language: node_js
 #node_js: version already specified on .nvmrc
 
+branches:
+  only:
+    - master
+
 script: bash ./deploy.sh
 env:
   global:
