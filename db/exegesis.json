@@ -1,14 +1,14 @@
 {
   "id": "exegesis",
   "dictionary_entry": {
-    "word": "exegesis o exégesis",
+    "word": "exégesis o exegesis",
     "meaning_order": 1,
     "grammatical_category": "f.",
     "definition": "Explicación, interpretación."
   },
   "meta": {
-    "source_name": "DRAE",
-    "source_version": 22,
+    "source_name": "DLE",
+    "source_version": 23,
     "added_on": "2015-06-22"
   }
 }

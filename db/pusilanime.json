@@ -4,10 +4,11 @@
     "word": "pusilánime",
     "meaning_order": 1,
     "grammatical_category": "adj.",
-    "definition": "Dicho de una persona: Falta de ánimo y valor para tomar decisiones o afrontar situaciones comprometidas."
+    "definition": "Dicho de una persona: Falta de ánimo y valor para tomar decisiones o afrontar situaciones comprometidas.",
+    "usage_notes": "U. t. c. s."
   },
   "meta": {
-    "source_name": "DRAE",
+    "source_name": "DLE",
     "source_version": 23,
     "added_on": "2015-07-13"
   }

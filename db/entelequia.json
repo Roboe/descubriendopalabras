@@ -2,14 +2,13 @@
   "id": "entelequia",
   "dictionary_entry": {
     "word": "entelequia",
-    "meaning_order": 2,
+    "meaning_order": 1,
     "grammatical_category": "f.",
-    "mark": "irón.",
     "definition": "Cosa irreal."
   },
   "meta": {
-    "source_name": "DRAE",
-    "source_version": 22,
+    "source_name": "DLE",
+    "source_version": 23,
     "added_on": "2015-06-13"
   }
 }

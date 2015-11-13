@@ -2,13 +2,13 @@
   "id": "albricias",
   "dictionary_entry": {
     "word": "albricias",
-    "meaning_order": 1,
+    "meaning_order": 3,
     "grammatical_category": "interj.",
     "definition": "Usado para denotar júbilo."
   },
   "meta": {
-    "source_name": "DRAE",
-    "source_version": 22,
+    "source_name": "DLE",
+    "source_version": 23,
     "added_on": "2015-06-02"
   }
 }
