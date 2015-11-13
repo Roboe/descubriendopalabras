@@ -12,6 +12,7 @@ var SRC = {
 
   emojione: 'node_modules/emojione/assets/png/*.png',
   words: 'db/*.json',
+  extra: 'extra/**',
 };
 var DEST = {
   root: 'public/',
@@ -23,7 +24,7 @@ var DEST = {
   emojione: 'public/assets/emojione/',
   words: 'public/db/',
   words_index: 'public/db.json',
-  nojekyll: 'public/.nojekyll',
+  extra: 'public/',
 };
 
 // Process HTML files
@@ -92,12 +93,13 @@ gulp.task('db_index', ['db_words'], function() {
 });
 
 // Tell GitHub this is not a Jekyll page
-gulp.task('nojekyll', function() {
-  return fs.writeFileSync(DEST.nojekyll, '');
+gulp.task('extra', function() {
+  return gulp.src(SRC.extra)
+    .pipe(gulp.dest(DEST.extra));
 });
 
 // Build project
-gulp.task('default', ['pages', 'stylesheets', 'scripts', 'db_words', 'db_index', 'nojekyll']);
+gulp.task('default', ['pages', 'stylesheets', 'scripts', 'db_words', 'db_index', 'extra']);
 
 // Watch for changes for easy development
 gulp.task('watch', ['pages', 'stylesheets', 'scripts-dev', 'db_words', 'db_index'], function() {
