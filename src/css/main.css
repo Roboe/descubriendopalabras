@@ -89,11 +89,16 @@ input[type="button"] {
 	background: #9BA3AE no-repeat .5em center;
 	background-size: 1.1em auto;
 	background-color: rgba(0, 0, 0, 0.1);
-}
 
+	outline: none; /* Remove WebKit glossy border */
+}
+input[type="button"]:focus,
 input[type="button"]:hover {
 	background-color: #798392;
 	background-color: rgba(0, 0, 0, 0.2);
+}
+input[type="button"]::-moz-focus-inner {
+	border: none; /* Remove Gecko dotted border */
 }
 
 #button-share {
