@@ -25,22 +25,25 @@ body {
 }
 
 body {
-	display: table;
 	color: #ffffff;
 	font-family: 'Liberation Sans', 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	-webkit-text-size-adjust: 100%;
-	max-width: 40rem;
-	margin: 0 auto;
 }
 
 main {
-	display: table-cell;
+	display: flex;
+	height: 100%;
+	max-width: 40rem;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+main > * {
 	width: 100%;
-	vertical-align: middle;
-	text-align: center;
-	padding-bottom: 20%;
 }
 
 #title {
