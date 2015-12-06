@@ -46,14 +46,20 @@ main > * {
 	width: 100%;
 }
 
+h1 {
+	font-size: 1.9rem;
+}
+
 #title {
+	display: inline-block;
 	text-align: justify;
 	padding: 1rem 2rem;
 	margin: 0;
 	text-overflow: ellipsis;
 	overflow: auto;
-	word-break: break-all;
-	/* max-width: 300px; Working, but... */
+}
+#title > span {
+	display: inline-block;
 }
 
 article {
@@ -95,15 +101,4 @@ input[type="button"]:hover {
 
 #button-generate {
 	background-image: url("../assets/emojione/1F504.png");
-}
-
-/* Break-word hack (mobile first) */
-h1 > span {
-	display: block;
-}
-
-@media (min-width: 400px) {
-	h1 > span {
-		display: inline;
-	}
 }
