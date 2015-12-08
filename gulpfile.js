@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
+var browserSync = require('browser-sync').create();
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 
@@ -30,13 +31,15 @@ var DEST = {
 // Process HTML files
 gulp.task('pages', function() {
   return gulp.src(SRC.pages)
-    .pipe(gulp.dest(DEST.pages));
+    .pipe(gulp.dest(DEST.pages))
+    .pipe(browserSync.stream());
 });
 
 // Process CSS files
 gulp.task('stylesheets', ['emojione'], function() {
   return gulp.src(SRC.stylesheets)
-    .pipe(gulp.dest(DEST.stylesheets));
+    .pipe(gulp.dest(DEST.stylesheets))
+    .pipe(browserSync.stream());
 });
 
 // Process JavaScript files
@@ -45,13 +48,15 @@ gulp.task('scripts', function() {
     .pipe(plugins.stripDebug())
     .pipe(plugins.uglify())
     .pipe(plugins.concat(DEST.scripts_concat_name))
-    .pipe(gulp.dest(DEST.scripts));
+    .pipe(gulp.dest(DEST.scripts))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('scripts-dev', function() {
   return gulp.src(SRC.scripts)
     .pipe(plugins.concat(DEST.scripts_concat_name))
-    .pipe(gulp.dest(DEST.scripts));
+    .pipe(gulp.dest(DEST.scripts))
+    .pipe(browserSync.stream());
 });
 
 // Copy EmojiOne images
@@ -103,6 +108,12 @@ gulp.task('default', ['pages', 'stylesheets', 'scripts', 'db_words', 'db_index',
 
 // Watch for changes for easy development
 gulp.task('watch', ['pages', 'stylesheets', 'scripts-dev', 'db_words', 'db_index'], function() {
+  browserSync.init({
+    server: {
+      baseDir: DEST.root,
+    },
+  });
+
   gulp.watch(SRC.pages, ['pages']);
   gulp.watch(SRC.stylesheets, ['stylesheets']);
   gulp.watch(SRC.scripts, ['scripts-dev']);

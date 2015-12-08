@@ -5,8 +5,8 @@
   "homepage": "https://roboe.github.io/descubriendopalabras",
   "main": "src/index.html",
   "scripts": {
-    "prestart": "gulp watch &",
-    "start": "node server.js",
+    "//": "echo 'npm start serves with browserSync and watches for changes'",
+    "start": "gulp watch",
     "build": "gulp"
   },
   "repository": {
@@ -23,13 +23,13 @@
     "whatwg-fetch": "^0.10.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-changed": "^1.3.0",
     "gulp-concat": "^2.6.0",
     "gulp-load-plugins": "^1.0.0",
     "gulp-strip-debug": "^1.0.2",
     "gulp-uglify": "^1.4.2",
-    "mkdirp": "^0.5.1",
-    "node-static": "^0.7.7"
+    "mkdirp": "^0.5.1"
   }
 }
