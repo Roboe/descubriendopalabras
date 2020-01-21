@@ -1,0 +1,4 @@
+title = "#DescubriendoPalabras"
+baseURL = "https://descubre.virgulilla.com"
+defaultContentLanguage = "es"
+languageCode = "es-es" # RSS
