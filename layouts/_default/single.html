@@ -21,5 +21,9 @@
         onclick="loadRandomPage(true); return false"
       ><input type="button" value="🔄 Otra palabra" autofocus /></a>
     </aside>
+    <script type="text/javascript">
+      const button = document.getElementById('button-generate')
+      button.removeAttribute('href')
+    </script>
   </article>
 {{ end }}
