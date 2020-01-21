@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html{{ with .Param "bg_color" }} class="{{ . }}"{{ end }}>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ .Site.Title }}</title>
+
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+    {{ with .Site.Home.OutputFormats.Get "JS" }}
+    <script type="text/javascript" src="{{ .RelPermalink }}"></script>
+    {{ end }}
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title"><span>#Descubriendo</span><span>Palabras</span></h1>
+      </header>
+      {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </main>
+  </body>
+</html>

@@ -2,3 +2,13 @@ title = "#DescubriendoPalabras"
 baseURL = "https://descubre.virgulilla.com"
 defaultContentLanguage = "es"
 languageCode = "es-es" # RSS
+
+[outputFormats]
+  [outputFormats.JS]
+    mediaType = "application/javascript"
+    isPlainText = true
+    isHTML = false
+
+[outputs]
+  home = ["HTML", "JS"]
+  page = ["HTML"]

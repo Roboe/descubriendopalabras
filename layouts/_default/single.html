@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <article>
+    <h2 id="word">{{ .Param "entry.word" }}</h2>
+    <p id="meaning">
+      <!--
+      {{ with .Param "entry.meaning_order" }}{{ . }}.{{ end }}
+      {{ with .Param "entry.grammatical_category" }}{{ . }}{{ end }}
+      {{ with .Param "entry.marks" }}{{ range . }}{{ . }} {{ end }}{{ end }}
+      -->
+      {{ .Param "entry.definition" }}
+      <!--
+      {{ with .Param "entry.usage_notes" }}{{ range . }}{{ . }} {{ end }}{{ end }}
+      -->
+    </p>
+    <aside>
+      <!--input id="button-share" type="button" value="Compartir"></input-->
+      {{ $next := index (where .Site.RegularPages "Section" .Section | shuffle) 0 }}
+      <a
+        id="button-generate"
+        href="{{ with $next }}{{ .Permalink }}{{ end }}"
+        onclick="loadRandomPage(true); return false"
+      ><input type="button" value="Otra palabra" autofocus /></a>
+    </aside>
+  </article>
+{{ end }}

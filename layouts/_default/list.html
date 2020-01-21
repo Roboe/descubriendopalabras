@@ -1,0 +1,15 @@
+{{ define "main" }}
+<noscript>
+  <ul>
+  {{ range (shuffle .RegularPages) }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Param "entry.word" }}</a>
+    </li>
+  {{ end }}
+  </ul>
+</noscript>
+<script type="text/javascript">
+  const keepHistory = false
+  loadRandomPage(keepHistory)
+</script> 
+{{ end }}
