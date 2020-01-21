@@ -82,7 +82,7 @@ input[type="button"] {
 	color: inherit;
 
 	margin: .25em;
-	padding: 0.5em 0.75em 0.5em 1.75em;
+	padding: 0.5em 0.75em;
 	border: none;
 	border-radius: 0.25em;
 
@@ -99,12 +99,4 @@ input[type="button"]:hover {
 }
 input[type="button"]::-moz-focus-inner {
 	border: none; /* Remove Gecko dotted border */
-}
-
-#button-share {
-	background-image: url("../assets/emojione/1F517.png");
-}
-
-#button-generate {
-	background-image: url("../assets/emojione/1F504.png");
 }

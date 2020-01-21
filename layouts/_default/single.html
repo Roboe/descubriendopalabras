@@ -13,13 +13,13 @@
       -->
     </p>
     <aside>
-      <!--input id="button-share" type="button" value="Compartir"></input-->
+      <!--input id="button-share" type="button" value="🔗 Compartir"></input-->
       {{ $next := index (where .Site.RegularPages "Section" .Section | shuffle) 0 }}
       <a
         id="button-generate"
         href="{{ with $next }}{{ .Permalink }}{{ end }}"
         onclick="loadRandomPage(true); return false"
-      ><input type="button" value="Otra palabra" autofocus /></a>
+      ><input type="button" value="🔄 Otra palabra" autofocus /></a>
     </aside>
   </article>
 {{ end }}
