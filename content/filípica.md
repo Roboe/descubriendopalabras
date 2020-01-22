@@ -1,6 +1,6 @@
 ---
 title: filípica
-date: 2020-01-22
+date: 2020-01-14
 part_of_speech: f.
 meaning_order: 1
 source:
