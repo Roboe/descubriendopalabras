@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
-    {{ with .Site.Home.OutputFormats.Get "JS" }}
+    {{ with .Site.Home.OutputFormats.Get "JS" -}}
     <script type="text/javascript" src="{{ .RelPermalink }}"></script>
-    {{ end }}
+    {{- end }}
   </head>
   <body>
     <main>
