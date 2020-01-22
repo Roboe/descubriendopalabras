@@ -1,17 +1,16 @@
 ---
-bg_color: dark
-entry:
-  definition: noctámbulo.
-  grammatical_category: adj.
-  marks:
+title: noctívago, ga
+date: 2015-06-21
+part_of_speech: adj.
+marks:
   - poét.
-  meaning_order: 1
-  usage_notes:
+meaning_order: 1
+usage_notes:
   - Apl. a pers.
   - U. t. c. s.
-  word: noctívago, ga
-meta:
-  added_on: '2015-06-21'
-  source_name: DLE
-  source_version: 23
+bg_color: dark
+source:
+  name: DLE 23
 ---
+
+noctámbulo.

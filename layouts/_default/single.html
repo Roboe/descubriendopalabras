@@ -1,15 +1,15 @@
 {{ define "main" }}
   <article>
-    <h2 id="word">{{ .Param "entry.word" }}</h2>
+    <h2 id="word">{{ .Title }}</h2>
     <p id="meaning">
       <!--
-      {{ with .Param "entry.meaning_order" }}{{ . }}.{{ end }}
-      {{ with .Param "entry.grammatical_category" }}{{ . }}{{ end }}
-      {{ with .Param "entry.marks" }}{{ range . }}{{ . }} {{ end }}{{ end }}
+      {{ with .Param "meaning_order" }}{{ . }}.{{ end }}
+      {{ with .Param "part_of_speech" }}{{ . }}{{ end }}
+      {{ with .Param "marks" }}{{ range . }}{{ . }} {{ end }}{{ end }}
       -->
-      {{ .Param "entry.definition" }}
+      {{ .Content }}
       <!--
-      {{ with .Param "entry.usage_notes" }}{{ range . }}{{ . }} {{ end }}{{ end }}
+      {{ with .Param "usage_notes" }}{{ range . }}{{ . }} {{ end }}{{ end }}
       -->
     </p>
     <aside>

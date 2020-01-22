@@ -1,14 +1,13 @@
 ---
-bg_color: blue
-entry:
-  definition: Viento suave y apacible.
-  grammatical_category: m.
-  marks:
+title: céfiro
+date: 2015-06-01
+part_of_speech: m.
+marks:
   - poét.
-  meaning_order: 2
-  word: céfiro
-meta:
-  added_on: '2015-06-01'
-  source_name: DLE
-  source_version: 23
+meaning_order: 2
+bg_color: blue
+source:
+  name: DLE 23
 ---
+
+Viento suave y apacible.

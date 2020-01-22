@@ -1,11 +1,10 @@
 ---
-entry:
-  definition: Muy sorprendente y desconcertante.
-  grammatical_category: adj.
-  meaning_order: 1
-  word: abracadabrante
-meta:
-  added_on: '2015-06-13'
-  source_name: DLE
-  source_version: 23
+title: abracadabrante
+date: 2015-06-13
+part_of_speech: adj.
+meaning_order: 1
+source:
+  name: DLE 23
 ---
+
+Muy sorprendente y desconcertante.

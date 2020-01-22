@@ -1,11 +1,10 @@
 ---
-entry:
-  definition: Que durará siempre; que, habiendo tenido principio, no tendrá fin.
-  grammatical_category: adj.
-  meaning_order: 1
-  word: sempiterno, na
-meta:
-  added_on: '2015-06-01'
-  source_name: DLE
-  source_version: 23
+title: sempiterno, na
+date: 2015-06-01
+part_of_speech: adj.
+meaning_order: 1
+source:
+  name: DLE 23
 ---
+
+Que durará siempre; que, habiendo tenido principio, no tendrá fin.

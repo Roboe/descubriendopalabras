@@ -1,11 +1,10 @@
 ---
-entry:
-  definition: Perteneciente o relativo a los sueños.
-  grammatical_category: adj.
-  meaning_order: 1
-  word: onírico, ca
-meta:
-  added_on: '2015-06-09'
-  source_name: DLE
-  source_version: 23
+title: onírico, ca
+date: 2015-06-09
+part_of_speech: adj.
+meaning_order: 1
+source:
+  name: DLE 23
 ---
+
+Perteneciente o relativo a los sueños.

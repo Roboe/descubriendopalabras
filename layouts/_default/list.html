@@ -7,7 +7,7 @@
   <ul>
   {{ range (shuffle .RegularPages) }}
     <li>
-      <a href="{{ .Permalink }}">{{ .Param "entry.word" }}</a>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
   {{ end }}
   </ul>

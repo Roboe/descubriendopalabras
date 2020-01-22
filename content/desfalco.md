@@ -1,12 +1,10 @@
 ---
-entry:
-  definition: Acción y efecto de desfalcar.
-  grammatical_category: m.
-  meaning_order: 1
-  referenced_definition: derribar a alguien del favor, privanza o amistad que gozaba
-  word: desfalco
-meta:
-  added_on: '2015-06-09'
-  source_name: DLE
-  source_version: 23
+title: desfalco
+date: 2015-06-09
+part_of_speech: m.
+meaning_order: 1
+source:
+  name: DLE 23
 ---
+
+Acción y efecto de desfalcar (‖ derribar a alguien del favor, privanza o amistad que gozaba).
