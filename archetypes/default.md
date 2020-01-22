@@ -1,7 +1,7 @@
 ---
 # palabra completa con flexión de género
 title: palabro, bra
-date: {{ .Date.Format "2006-01-02"}}
+date: {{ .Date }}
 part_of_speech:
   # una de las siguientes
   - adj.
