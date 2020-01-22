@@ -41,7 +41,7 @@ body a:active {
 
 main {
 	display: flex;
-	height: 100%;
+	min-height: 100%;
 	max-width: 40rem;
 	margin: 0 auto;
 	flex-direction: column;
