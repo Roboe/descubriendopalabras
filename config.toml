@@ -10,5 +10,5 @@ languageCode = "es-es" # RSS
     isHTML = false
 
 [outputs]
-  home = ["HTML", "JS"]
-  page = ["HTML"]
+  home = ["HTML", "JS", "JSON"]
+  page = ["HTML", "JSON"]

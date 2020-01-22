@@ -1,0 +1,39 @@
+{
+  "entry": "{{ .Title }}"
+  {{- "," }}
+  "definition": "{{ strings.TrimRight "\n" .Content }}"
+  {{- with .Param "part_of_speech" }}
+  {{-   "," }}
+  "part_of_speech": "{{ . }}"
+  {{- end }}
+  {{- with .Param "marks" }}
+  {{-   "," }}
+  "marks": {{ jsonify . }}
+  {{- end }}
+  {{- with .Param "meaning_order" }}
+  {{-   "," }}
+  "meaning_order": "{{ . }}"
+  {{- end }}
+  {{- with .Param "usage_notes" }}
+  {{-   "," }}
+  "usage_notes": "{{ jsonify . }}"
+  {{- end }}
+  {{- "," }}
+  "meta": {
+    {{- with .Param "bg_color" }}
+    "bg_color": "{{ . }}"
+    {{- end }}
+    {{- if and (.Param "bg_color") (.Param "source.name") }}
+    {{-     "," }}
+    {{- end }}
+    {{- with .Param "source.name" }}
+    "source_name": "{{ . }}"
+    {{- end }}
+    {{- if and (.Param "source.name") (.Param "source.link") }}
+    {{-     "," }}
+    {{- end }}
+    {{- with .Param "source.link" }}
+    "source_link": "{{ . }}"
+    {{- end }}
+  }
+}

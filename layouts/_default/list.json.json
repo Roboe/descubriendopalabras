@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {{- range .RegularPages.ByTitle }}
+    {
+      "term": "{{ trim (path.Base .Path) (path.Ext .Path) }}"
+      {{- "," }}
+      "url": "{{ (.OutputFormats.Get "JSON").Permalink }}"
+    }
+    {{-   if .Prev }}
+    {{-     "," }}
+    {{-   end }}
+    {{- end }}
+  ]
+}
