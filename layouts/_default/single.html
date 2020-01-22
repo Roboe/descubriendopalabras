@@ -13,17 +13,18 @@
       -->
     </p>
     <aside>
-      <!--input id="button-share" type="button" value="🔗 Compartir"></input-->
+      <!--<button id="button-share">&x1f517; Compartir</button>-->
       {{ $next := index (where .Site.RegularPages "Section" .Section | shuffle) 0 }}
-      <a
-        id="button-generate"
-        href="{{ with $next }}{{ .Permalink }}{{ end }}"
-        onclick="loadRandomPage(true); return false"
-      ><input type="button" value="🔄 Otra palabra" autofocus /></a>
+      <a href="{{ with $next }}{{ .Permalink }}{{ end }}">
+        <button id="button-generate"
+          onclick="loadRandomPage(true); return false"
+          autofocus
+        >&#x1f504; Otra palabra</button>
+      </a>
     </aside>
     <script type="text/javascript">
-      const button = document.getElementById('button-generate')
-      button.removeAttribute('href')
+      const link = document.getElementById('button-generate').parentElement
+      link.removeAttribute('href')
     </script>
   </article>
 {{ end }}
