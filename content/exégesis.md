@@ -5,6 +5,7 @@ part_of_speech: f.
 meaning_order: 1
 source:
   name: DLE 23
+  link: https://dle.rae.es/exégesis
 ---
 
 Explicación, interpretación.

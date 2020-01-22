@@ -7,6 +7,7 @@ marks:
 meaning_order: 2
 source:
   name: DLE 23
+  link: https://dle.rae.es/adlátere
 ---
 
 Persona subordinada a otra, de la que parece inseparable.

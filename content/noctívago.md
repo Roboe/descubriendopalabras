@@ -11,6 +11,7 @@ usage_notes:
 bg_color: dark
 source:
   name: DLE 23
+  link: https://dle.rae.es/noctívago
 ---
 
 noctámbulo.

@@ -7,6 +7,7 @@ usage_notes:
   - U. m. en pl.
 source:
   name: DLE 23
+  link: https://dle.rae.es/llar
 ---
 
 Cadena de hierro, pendiente en el cañón de la chimenea, con un garabato en el extremo inferior para colgar la caldera, y a poca distancia otro para subirla o bajarla.
