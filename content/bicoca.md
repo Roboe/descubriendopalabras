@@ -1,6 +1,6 @@
 ---
 title: bicoca
-date: 2020-01-22
+date: 2020-01-19
 part_of_speech: f.
 marks:
   - coloq.
