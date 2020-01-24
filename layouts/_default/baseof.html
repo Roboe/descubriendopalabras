@@ -7,7 +7,8 @@
 
     <title>{{ .Site.Title }}{{ with .Title }}: {{ . }}{{ end }}</title>
 
-    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    {{ $styleSheet := resources.Get "styles/main.css" | resources.ExecuteAsTemplate "styles/main.css" .Site -}}
+    <link rel="stylesheet" href="{{ $styleSheet.Permalink }}">
 
     {{ $randWordScript := resources.Get "scripts/random-word.js" | resources.ExecuteAsTemplate "js/random-word.js" .Site -}}
     <script type="text/javascript" src="{{ $randWordScript.Permalink }}"></script>

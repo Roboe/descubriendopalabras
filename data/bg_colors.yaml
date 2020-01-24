@@ -1,5 +1,10 @@
-- blue
-- dark
-- green
-- orange
-- purple
+- name: blue
+  cssValue: "#3498db"
+- name: dark
+  cssValue: "#2c3e50"
+- name: green
+  cssValue: "#2ecc71"
+- name: orange
+  cssValue: "#e67e22"
+- name: purple
+  cssValue: "#9b59b6"
