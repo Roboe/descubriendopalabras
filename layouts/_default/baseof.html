@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{{ with .Param "bg_color" }}has-color {{ . }}{{ else }}{{ index (shuffle .Site.Data.bg_colors) 0 }}{{ end }}">
+<html class="{{ with .Param "bg_color" }}has-color {{ . }}{{ else }}{{ index (index (shuffle .Site.Data.bg_colors) 0) "name" }}{{ end }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
