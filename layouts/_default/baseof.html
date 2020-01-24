@@ -9,6 +9,11 @@
 
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
+    {{ $randWordScript := resources.Get "scripts/random-word.js" | resources.ExecuteAsTemplate "js/random-word.js" .Site -}}
+    <script type="text/javascript" src="{{ $randWordScript.Permalink }}"></script>
+    {{ $dynamicBackground := resources.Get "scripts/dynamic-background.js" | resources.ExecuteAsTemplate "js/dynamic-background.js" .Site -}}
+    <script type="text/javascript" src="{{ $dynamicBackground.Permalink }}"></script>
+
     {{ with .Site.Home.OutputFormats.Get "JS" -}}
     <script type="text/javascript" src="{{ .RelPermalink }}"></script>
     {{- end }}
