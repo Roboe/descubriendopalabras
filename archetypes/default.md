@@ -4,14 +4,14 @@ title: palabro, bra
 date: {{ .Date }}
 part_of_speech:
   # una de las siguientes
-  - adj.
-  - interj.
-  - intr.
-  - f.
-  - m.
-  - m. y f.
-  - prnl.
-  - tr.
+  adj.
+  interj.
+  intr.
+  f.
+  m.
+  m. y f.
+  prnl.
+  tr.
 marks:
   - Anat.
   - coloq.
@@ -30,11 +30,11 @@ usage_notes:
   - U. t. en sent. peyor.
 bg_color:
   # uno de los siguientes
-  - blue
-  - dark
-  - green
-  - orange
-  - purple
+  blue
+  dark
+  green
+  orange
+  purple
 source:
   name: DLE 23
   link: https://dle.rae.es/palabra
