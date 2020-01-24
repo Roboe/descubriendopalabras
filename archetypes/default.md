@@ -1,9 +1,7 @@
 ---
-# palabra completa con flexión de género
 title: {{ replace .Name "-" " " }}, a
 date: {{ .Date }}
 part_of_speech:
-  # una de las siguientes
   adj.
   interj.
   intr.
@@ -21,7 +19,6 @@ marks:
   - Pan.
   - poét.
   - p. us.
-# número de la acepción resaltada
 meaning_order: 1
 usage_notes:
   - Apl. a pers.
@@ -29,7 +26,6 @@ usage_notes:
   - U. t. c. s.
   - U. t. en sent. peyor.
 bg_color:
-  # uno de los siguientes
   blue
   dark
   green
