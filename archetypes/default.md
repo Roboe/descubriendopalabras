@@ -1,6 +1,6 @@
 ---
 # palabra completa con flexión de género
-title: palabro, bra
+title: {{ replace .Name "-" " " }}, a
 date: {{ .Date }}
 part_of_speech:
   # una de las siguientes
@@ -37,7 +37,7 @@ bg_color:
   purple
 source:
   name: DLE 23
-  link: https://dle.rae.es/palabra
+  link: https://dle.rae.es/{{ .Name }}
 ---
 
 Definición de la palabra (‖ definición de la última palabra).
