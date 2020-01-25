@@ -1,6 +1,6 @@
 ---
 title: refunfuñar
-date: 2016-03-05
+date: 2016-01-15
 part_of_speech: intr.
 meaning_order: 1
 source:
