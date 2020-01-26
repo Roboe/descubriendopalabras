@@ -12,6 +12,9 @@ part_of_speech:
   tr.
 marks:
   - Anat.
+  - Arg.
+  - Bol.
+  - Chile
   - coloq.
   - despect.
   - desus.
@@ -19,6 +22,9 @@ marks:
   - Pan.
   - poét.
   - p. us.
+  - Par.
+  - Ur.
+  - vulg.
 meaning_order: 1
 usage_notes:
   - Apl. a pers.
