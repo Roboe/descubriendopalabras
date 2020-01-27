@@ -19,6 +19,7 @@ marks:
   - despect.
   - desus.
   - Esp.
+  - Mar.
   - Pan.
   - poét.
   - p. us.
