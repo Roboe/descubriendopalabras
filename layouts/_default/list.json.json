@@ -1,6 +1,6 @@
 {
   "entries": [
-    {{- range .RegularPages.ByTitle }}
+    {{- range .RegularPages }}
     {
       "term": "{{ trim (path.Base .Path) (path.Ext .Path) }}"
       {{- "," }}
