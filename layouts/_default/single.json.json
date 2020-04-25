@@ -4,7 +4,7 @@
 {{- with .Param "source.link" }}{{- $meta = dict "source_link" . | merge $meta }}{{ end }}
 
 {{- $data := dict }}
-{{- $data = dict "definition" (strings.TrimRight "\n" .Content) | merge $data }}
+{{- $data = dict "definition" (chomp .Content) | merge $data }}
 {{- $data = dict "entry" .Title | merge $data }}
 {{- with .Param "marks" }}{{ $data = dict "marks" . | merge $data }}{{ end }}
 {{- with .Param "meaning_order" }}{{ $data = dict "meaning_order" . | merge $data }}{{ end }}
