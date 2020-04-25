@@ -1,39 +1,15 @@
-{
-  "entry": "{{ .Title }}"
-  {{- "," }}
-  "definition": "{{ strings.TrimRight "\n" .Content }}"
-  {{- with .Param "part_of_speech" }}
-  {{-   "," }}
-  "part_of_speech": "{{ . }}"
-  {{- end }}
-  {{- with .Param "marks" }}
-  {{-   "," }}
-  "marks": {{ jsonify . }}
-  {{- end }}
-  {{- with .Param "meaning_order" }}
-  {{-   "," }}
-  "meaning_order": "{{ . }}"
-  {{- end }}
-  {{- with .Param "usage_notes" }}
-  {{-   "," }}
-  "usage_notes": "{{ jsonify . }}"
-  {{- end }}
-  {{- "," }}
-  "meta": {
-    {{- with .Param "bg_color" }}
-    "bg_color": "{{ . }}"
-    {{- end }}
-    {{- if and (.Param "bg_color") (.Param "source.name") }}
-    {{-     "," }}
-    {{- end }}
-    {{- with .Param "source.name" }}
-    "source_name": "{{ . }}"
-    {{- end }}
-    {{- if and (.Param "source.name") (.Param "source.link") }}
-    {{-     "," }}
-    {{- end }}
-    {{- with .Param "source.link" }}
-    "source_link": "{{ . }}"
-    {{- end }}
-  }
-}
+{{- $meta := dict }}
+{{- with .Param "bg_color" }}{{- $meta = dict "bg_color" . | merge $meta }}{{ end }}
+{{- with .Param "source.name" }}{{- $meta = dict "source_name" . | merge $meta }}{{ end }}
+{{- with .Param "source.link" }}{{- $meta = dict "source_link" . | merge $meta }}{{ end }}
+
+{{- $data := dict }}
+{{- $data = dict "definition" (strings.TrimRight "\n" .Content) | merge $data }}
+{{- $data = dict "entry" .Title | merge $data }}
+{{- with .Param "marks" }}{{ $data = dict "marks" . | merge $data }}{{ end }}
+{{- with .Param "meaning_order" }}{{ $data = dict "meaning_order" . | merge $data }}{{ end }}
+{{- with .Param "part_of_speech" }}{{ $data = dict "part_of_speech" . | merge $data }}{{ end }}
+{{- with .Param "usage_notes" }}{{ $data = dict "usage_notes" . | merge $data }}{{ end }}
+{{- $data = dict "meta" $meta | merge $data }}
+
+{{- $data | jsonify (dict "indent" "  ") }}

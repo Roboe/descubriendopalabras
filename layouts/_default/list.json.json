@@ -1,14 +1,9 @@
-{
-  "entries": [
-    {{- range .RegularPages }}
-    {
-      "term": "{{ trim (path.Base .Path) (path.Ext .Path) }}"
-      {{- "," }}
-      "url": "{{ (.OutputFormats.Get "JSON").Permalink }}"
-    }
-    {{-   if .Prev }}
-    {{-     "," }}
-    {{-   end }}
-    {{- end }}
-  ]
-}
+{{- $entries := slice }}
+{{- range .RegularPages }}
+  {{- $entry := dict }}
+  {{- $entry = dict "term" (trim (path.Base .Path) (path.Ext .Path)) | merge $entry }}
+  {{- $entry = dict "url" (.OutputFormats.Get "JSON").Permalink | merge $entry }}
+  {{- $entries = $entries | append $entry }}
+{{- end }}
+
+{{- $entries | jsonify (dict "indent" "  ") }}
