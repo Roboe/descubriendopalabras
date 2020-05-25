@@ -1,17 +1,19 @@
 {{ define "main" }}
   <article>
-    <h2 id="word">{{ .Title }}</h2>
-    <p id="meaning">
-      <!--
-      {{ with .Param "meaning_order" }}{{ . }}.{{ end }}
-      {{ with .Param "part_of_speech" }}{{ . }}{{ end }}
-      {{ with .Param "marks" }}{{ range . }}{{ . }} {{ end }}{{ end }}
-      -->
-      {{ .Content }}
-      <!--
-      {{ with .Param "usage_notes" }}{{ range . }}{{ . }} {{ end }}{{ end }}
-      -->
-    </p>
+    <dl>
+      <dt><h2 id="word">{{ .Title }}</h2></dt>
+      <dd id="meaning">
+        <!--
+        {{ with .Param "meaning_order" }}{{ . }}.{{ end }}
+        {{ with .Param "part_of_speech" }}{{ . }}{{ end }}
+        {{ with .Param "marks" }}{{ range . }}{{ . }} {{ end }}{{ end }}
+        -->
+        {{ .Content }}
+        <!--
+        {{ with .Param "usage_notes" }}{{ range . }}{{ . }} {{ end }}{{ end }}
+        -->
+      </dd>
+    </dl>
     <aside>
       <!--<button id="button-share">&x1f517; Compartir</button>-->
       {{ $next := index (where .Site.RegularPages "Section" .Section | shuffle) 0 }}
