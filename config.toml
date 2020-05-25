@@ -1,7 +1,11 @@
-title = "#DescubriendoPalabras"
 baseURL = "https://descubre.virgulilla.com"
+
 defaultContentLanguage = "es"
-languageCode = "es-es" # RSS
+[languages]
+[languages.es]
+  contentDir = "content/es"
+  title = "#DescubriendoPalabras"
+  languageCode = "es-es" # RSS
 
 [outputs]
   home = ["HTML", "JSON"]
