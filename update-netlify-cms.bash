@@ -1,5 +1,5 @@
 #! /bin/env bash
-VERSION=
+VERSION=2.10.49
 OUTPUT_D="./static/editor"
 
 curl \
