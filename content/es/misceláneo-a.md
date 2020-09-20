@@ -1,6 +1,6 @@
 ---
 title: misceláneo, a
-date: 2020-09-20
+date: 2020-08-08
 part_of_speech: adj.
 meaning_order: 1
 source:
