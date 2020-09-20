@@ -1,0 +1,117 @@
+site_url: https://descubre.virgulilla.com
+locale: es
+backend:
+  name: gitlab # Use "test-repo" for local testing
+  repo: roboe/descubriendopalabras # Path to your GitLab repository
+  branch: master # Branch to update (optional; defaults to master)
+  auth_type: implicit # Required for implicit grant
+  app_id: d2ddf815e10bad42bf3ff4b369d4c515e3c1658944aaf4ab1026f0c9c5219653 # Application ID from your GitLab settings
+media_folder: "static/uploads" # Media files will be stored in the repo under static/uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /uploads
+slug:
+  encoding: unicode
+  clean_accents: false
+  sanitize_replacement: "-"
+collections:
+- name: palabras_es # Used in routes, e.g., /admin/collections/blog
+  label: Palabras en español # Used in the UI
+  label_singular: término en español
+  folder: "content/es" # The path to the folder where the documents are stored
+  preview_path: "{{filename}}/"
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  format: frontmatter
+  editor:
+    preview: false
+  fields: # The fields for each document, usually in front matter
+  - label: Título
+    name: title
+    widget: "string"
+    default: "palabro, bra"
+  - label: Fecha
+    name: date
+    widget: "datetime"
+    format: "YYYY-MM-DD"
+    date_format: "YYYY-MM-DD"
+    time_format: false
+  - label: Categoría gramatical
+    name: part_of_speech
+    required: false
+    widget: "select"
+    options:
+    - adj.
+    - interj.
+    - intr.
+    - f.
+    - m.
+    - m. y f.
+    - prnl.
+    - tr.
+  - label: Marca
+    name: marks
+    required: false
+    widget: "select"
+    multiple: true
+    options:
+    - Anat.
+    - Arg.
+    - Bol.
+    - Chile
+    - coloq.
+    - despect.
+    - desus.
+    - Esp.
+    - Mar.
+    - Pan.
+    - poét.
+    - p. us.
+    - Par.
+    - Ur.
+    - vulg.
+  - label: Acepción
+    name: meaning_order
+    required: false
+    widget: "number"
+    value_type: int
+    default: 1
+  - label: Notas de uso
+    name: usage_notes
+    required: false
+    widget: "select"
+    multiple: true
+    options:
+    - Apl. a pers.
+    - U. m. en pl.
+    - U. t. c. s.
+    - U. t. c. s. m.
+    - U. t. en sent. peyor.
+  - label: Color de fondo
+    name: bg_color
+    required: false
+    widget: "select"
+    options:
+    - blue
+    - dark
+    - green
+    - orange
+    - purple
+  - label: Fuente
+    name: source
+    widget: object
+    fields:
+    - label: Nombre
+      name: name
+      required: false
+      widget: "string"
+      default: DLE 23
+    - label: Enlace
+      name: link
+      required: false
+      widget: "string"
+      default: "https://dle.rae.es/"
+  - label: Contenido
+    name: body
+    widget: "markdown"
+    default: |
+      
+      Definición de la palabra (‖ definición de la última palabra).
