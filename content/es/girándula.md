@@ -1,12 +1,14 @@
 ---
-title: girándula
-date: 2020-05-12
-part_of_speech: f.
+title: gorgojo
+date: 2020-05-16
+part_of_speech: m.
+marks:
+  - coloq.
 meaning_order: 1
-bg_color: orange
+bg_color: null
 source:
   name: DLE 23
-  link: https://dle.rae.es/girándula
+  link: https://dle.rae.es/gorgojo
 ---
 
-Rueda llena de cohetes que gira despidiéndolos.
+Persona muy pequeña.
