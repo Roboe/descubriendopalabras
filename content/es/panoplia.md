@@ -8,4 +8,4 @@ source:
   link: https://dle.rae.es/panoplia
 ---
 
-Definición de la palabra (‖ definición de la última palabra).
+Conjunto amplio y variado de elementos del mismo carácter.
