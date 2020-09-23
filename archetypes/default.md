@@ -33,6 +33,7 @@ usage_notes:
   - U. t. c. s.
   - U. t. c. s. m.
   - U. t. en sent. peyor.
+  - U. m. en sent. despect.
 bg_color:
   blue
   dark

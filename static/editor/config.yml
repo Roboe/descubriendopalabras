@@ -85,6 +85,7 @@ collections:
     - U. t. c. s.
     - U. t. c. s. m.
     - U. t. en sent. peyor.
+    - U. m. en sent. despect.
   - label: Color de fondo
     name: bg_color
     required: false

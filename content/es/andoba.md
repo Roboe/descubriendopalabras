@@ -5,7 +5,8 @@ part_of_speech: m. y f.
 marks:
   - coloq.
 meaning_order: 1
-usage_notes: null
+usage_notes:
+  - U. m. en sent. despect.
 source:
   name: DLE 23
   link: https://dle.rae.es/andoba
