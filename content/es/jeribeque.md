@@ -10,4 +10,4 @@ source:
   link: https://dle.rae.es/jeribeque
 ---
 
-Guiño, visaje, contorsión.
+Guiño, visaje, contorsión. (‖ movimiento con que se expresa algo)
