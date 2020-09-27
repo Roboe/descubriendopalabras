@@ -8,4 +8,3 @@ source:
   link: https://dle.rae.es/boga
 ---
 Buena aceptación, fortuna o auge.
-Definición de la palabra (‖ definición de la última palabra).
