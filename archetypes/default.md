@@ -30,6 +30,7 @@ meaning_order: 1
 usage_notes:
   - Apl. a pers.
   - U. m. en pl.
+  - U. t. c. prnl.
   - U. t. c. s.
   - U. t. c. s. m.
   - U. t. en sent. peyor.
