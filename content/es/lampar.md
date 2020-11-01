@@ -7,4 +7,4 @@ source:
   name: DLE 23
   link: https://dle.rae.es/lampar
 ---
-Definición de la palabra (‖ definición de la última palabra).
+Tener ansiedad por el logro de algo.

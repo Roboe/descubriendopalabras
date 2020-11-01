@@ -115,5 +115,4 @@ collections:
     widget: "markdown"
     modes:
     - raw
-    default: |      
-      Definición de la palabra (‖ definición de la última palabra).
+    default: Definición de la palabra (‖ definición de la última palabra).
