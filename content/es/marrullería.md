@@ -7,4 +7,4 @@ source:
   name: DLE 23
   link: https://dle.rae.es/marrullería
 ---
-Astucia tramposa o de mala intención.Definición de la palabra (‖ definición de la última palabra).
+Astucia tramposa o de mala intención.
