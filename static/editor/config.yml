@@ -4,7 +4,7 @@ backend:
   name: gitlab # Use "test-repo" for local testing
   repo: roboe/descubriendopalabras # Path to your GitLab repository
   branch: master # Branch to update (optional; defaults to master)
-  auth_type: implicit # Required for implicit grant
+  auth_type: pkce # Required for Proof Key for Code Exchange grant
   app_id: d2ddf815e10bad42bf3ff4b369d4c515e3c1658944aaf4ab1026f0c9c5219653 # Application ID from your GitLab settings
 media_folder: "static/uploads" # Media files will be stored in the repo under static/uploads
 public_folder: "/uploads" # The src attribute for uploaded media will begin with /uploads
