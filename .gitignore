@@ -1,5 +1,6 @@
 # Example .gitignore files: https://github.com/github/gitignore
 # Generated files by hugo
+.hugo_build.lock
 /public/
 /resources/_gen/
 
