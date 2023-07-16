@@ -18,7 +18,7 @@ body {
 	width: 100%;
 }
 
-{{ range .Site.Data.bg_colors -}}
+{{ range .Data.bg_colors -}}
 html.{{ index . "name" }} {
 	background-color: {{ index . "cssValue" }};
 }

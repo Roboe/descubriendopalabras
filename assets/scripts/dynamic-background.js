@@ -3,7 +3,7 @@
 
   const htmlElementClasses = document.querySelector('html').classList
   const colorClasses = [
-    {{- range .Site.Data.bg_colors }}
+    {{- range .Data.bg_colors }}
     "{{ index . "name" }}",
     {{- end }}
   ]
